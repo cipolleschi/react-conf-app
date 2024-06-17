@@ -25,6 +25,7 @@ export function OfflineBanner() {
 
   useEffect(() => {
     if (isOffline) {
+      // eslint-disable-next-line react-compiler/react-compiler -- open issue https://github.com/facebook/react/issues/29640
       height.value = withTiming(maxHeight);
     } else {
       height.value = withTiming(minHeight);

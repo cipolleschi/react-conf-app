@@ -23,6 +23,7 @@ export const PressableArea = forwardRef(
         ref={ref}
         style={[props.style, animatedStyle]}
         onPressIn={() => {
+          // eslint-disable-next-line react-compiler/react-compiler -- open issue https://github.com/facebook/react/issues/29640
           opacity.value = withTiming(0.75, { duration: 150 });
         }}
         onPressOut={() => {

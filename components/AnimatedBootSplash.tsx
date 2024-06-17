@@ -61,6 +61,7 @@ export const AnimatedBootSplash = ({
     navigationBarTranslucent: false,
 
     animate: () => {
+      // eslint-disable-next-line react-compiler/react-compiler -- open issue https://github.com/facebook/react/issues/29640
       opacity.value = withTiming(0, {
         duration: 250,
         easing: Easing.out(Easing.ease),

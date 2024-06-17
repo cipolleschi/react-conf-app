@@ -79,6 +79,7 @@ export default function Layout() {
         }
       } catch {}
     }
+    // eslint-disable-next-line react-compiler/react-compiler -- open issue https://github.com/facebook/react/issues/29640
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastNotificationResponse]);
 
