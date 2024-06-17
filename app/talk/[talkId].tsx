@@ -52,7 +52,7 @@ export default function TalkDetail() {
   // Animated header on scroll
   const translationY = useSharedValue(0);
   const scrollHandler = useAnimatedScrollHandler((event) => {
-    // eslint-disable-next-line react-compiler/react-compiler -- open issue https://github.com/facebook/react/issues/29640
+    // eslint-disable-next-line react-compiler/react-compiler -- open discussion https://github.com/reactwg/react-compiler/discussions/14
     translationY.value = event.contentOffset.y;
   });
   const headerStyle = useAnimatedStyle(() => {
