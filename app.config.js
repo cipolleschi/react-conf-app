@@ -147,5 +147,8 @@ export default {
     runtimeVersion: {
       policy: "appVersion",
     },
+    experiments: {
+      reactCompiler: true,
+    },
   },
 };
